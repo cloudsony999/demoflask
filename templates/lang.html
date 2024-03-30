@@ -1,0 +1,26 @@
+<html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+    <script type="text/javascript" src="{{url_for('static', filename='call.js')}}"></script>
+
+    </script>
+</head>
+<body>
+    <center><h1><u>I am Flask!!!</u></h1></center>
+    <br>
+        <br>
+<h3>
+    <ul>
+    {% for i in langs  %}
+    <li>
+        <h2>{{i}}</h2>
+    </li>
+    {% endfor  %}
+</ul>
+
+
+</h3>
+
+</body>
+</html>
